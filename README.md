@@ -1,6 +1,6 @@
 # MMORPG Character Database
 
-<img align="right" src="https://github.com/henriquevital00/Relic/blob/main/Images/Logo.png" width="30%" />
+<img align="right" src="https://github.com/WebisD/mmorpg-character-database/blob/main/images/rpg.jpg" width="30%" />
 
 Projeto semestral da matéria de Banco de Dados, ministrada no Centro Universitário FEI. 
 Consiste em um base de dados para um jogo de MMORPG. Apresennta o modelo relacional, modelo de entidade, bem como todas as queries necessárias para criação e inserção no database. 
