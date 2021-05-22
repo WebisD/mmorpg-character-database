@@ -136,7 +136,7 @@ CREATE TABLE public.consumivel_ofensivo (
     id_item integer NOT NULL,
     dano integer NOT NULL,
     tipo_dano varchar(50) NOT NULL,
-    duracao timestamp without time zone NOT NULL
+    duracao integer NOT NULL
 );
 
 CREATE INDEX ON public.consumivel_ofensivo
@@ -149,7 +149,7 @@ CREATE TABLE public.consumivel_suporte (
     debuff integer,
     descricao_buf varchar(200),
     descricao_debuff varchar(200),
-    duracao timestamp without time zone NOT NULL
+    duracao integer NOT NULL
 );
 
 CREATE INDEX ON public.consumivel_suporte

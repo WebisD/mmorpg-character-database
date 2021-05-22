@@ -4218,7 +4218,7 @@
 								"$ref": "AAAAAAF44T2kMPn867o="
 							},
 							"name": "duracao",
-							"type": "TIMESTAMP",
+							"type": "INTEGER",
 							"length": 0
 						}
 					]
@@ -4295,7 +4295,7 @@
 								"$ref": "AAAAAAF44T4ZRfoLje8="
 							},
 							"name": "duracao",
-							"type": "TIMESTAMP",
+							"type": "INTEGER",
 							"length": 0
 						}
 					]
