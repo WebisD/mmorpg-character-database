@@ -328,11 +328,11 @@ ALTER TABLE public.variedades ADD CONSTRAINT FK_variedades__id_item FOREIGN KEY 
 ALTER TABLE public.moeda ADD CONSTRAINT FK_moeda__id_item FOREIGN KEY (id_item) REFERENCES public.item(id_item);
 ALTER TABLE public.moeda ADD CONSTRAINT FK_moeda__id_moeda FOREIGN KEY (id_moeda) REFERENCES public.tipo_moeda(id_moeda);
 ALTER TABLE public.consumivel ADD CONSTRAINT FK_consumivel__id_item FOREIGN KEY (id_item) REFERENCES public.item(id_item);
-ALTER TABLE public.ofensivo ADD CONSTRAINT FK_ofensivo__id_item FOREIGN KEY (id_item) REFERENCES public.consumivel(id_item);
-ALTER TABLE public.suporte ADD CONSTRAINT FK_suporte__id_item FOREIGN KEY (id_item) REFERENCES public.consumivel(id_item);
+ALTER TABLE public.ofensivo ADD CONSTRAINT FK_ofensivo__id_item FOREIGN KEY (id_item) REFERENCES public.item(id_item);
+ALTER TABLE public.suporte ADD CONSTRAINT FK_suporte__id_item FOREIGN KEY (id_item) REFERENCES public.item(id_item);
 ALTER TABLE public.equipamento ADD CONSTRAINT FK_equipamento__id_item FOREIGN KEY (id_item) REFERENCES public.item(id_item);
-ALTER TABLE public.armamento ADD CONSTRAINT FK_armamento__id_item FOREIGN KEY (id_item) REFERENCES public.equipamento(id_item);
-ALTER TABLE public.armadura ADD CONSTRAINT FK_armadura__id_item FOREIGN KEY (id_item) REFERENCES public.equipamento(id_item);
+ALTER TABLE public.armamento ADD CONSTRAINT FK_armamento__id_item FOREIGN KEY (id_item) REFERENCES public.item(id_item);
+ALTER TABLE public.armadura ADD CONSTRAINT FK_armadura__id_item FOREIGN KEY (id_item) REFERENCES public.item(id_item);
 ALTER TABLE public.habilidade_jogador ADD CONSTRAINT FK_habilidade_jogador__id_habilidade FOREIGN KEY (id_habilidade) REFERENCES public.habilidade(id_habilidade);
 ALTER TABLE public.habilidade_jogador ADD CONSTRAINT FK_habilidade_jogador__id_jogador FOREIGN KEY (id_jogador) REFERENCES public.personagem(id_personagem);
 ALTER TABLE public.equipamento_requer_aptidao ADD CONSTRAINT FK_equipamento_requer_aptidao__id_aptidao FOREIGN KEY (id_aptidao) REFERENCES public.aptidoes(id_aptidao);
