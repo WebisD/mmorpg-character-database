@@ -132,51 +132,36 @@ CREATE INDEX ON public.moeda
     (id_moeda);
 
 
-CREATE TABLE public.consumivel (
+CREATE TABLE public.consumivel_ofensivo (
     id_item integer NOT NULL,
+    dano integer NOT NULL,
+    tipo_dano varchar(50) NOT NULL,
     duracao timestamp without time zone NOT NULL
 );
 
-CREATE INDEX ON public.consumivel
+CREATE INDEX ON public.consumivel_ofensivo
     (id_item);
 
 
-CREATE TABLE public.ofensivo (
-    id_item integer NOT NULL,
-    dano integer NOT NULL,
-    tipo_dano varchar(50) NOT NULL
-);
-
-CREATE INDEX ON public.ofensivo
-    (id_item);
-
-
-CREATE TABLE public.suporte (
+CREATE TABLE public.consumivel_suporte (
     id_item integer NOT NULL,
     buff integer,
     debuff integer,
     descricao_buf varchar(200),
-    descricao_debuff varchar(200)
+    descricao_debuff varchar(200),
+    duracao timestamp without time zone NOT NULL
 );
 
-CREATE INDEX ON public.suporte
-    (id_item);
-
-
-CREATE TABLE public.equipamento (
-    id_item integer NOT NULL,
-    material varchar(150) NOT NULL,
-    durabilidade integer NOT NULL
-);
-
-CREATE INDEX ON public.equipamento
+CREATE INDEX ON public.consumivel_suporte
     (id_item);
 
 
 CREATE TABLE public.armamento (
     id_item integer NOT NULL,
     tipo varchar(150) NOT NULL,
-    bonus_armamento integer NOT NULL
+    bonus_armamento integer NOT NULL,
+    material varchar(150) NOT NULL,
+    durabilidade integer NOT NULL
 );
 
 CREATE INDEX ON public.armamento
@@ -185,7 +170,9 @@ CREATE INDEX ON public.armamento
 
 CREATE TABLE public.armadura (
     id_item integer NOT NULL,
-    bonus_defesa integer NOT NULL
+    bonus_defesa integer NOT NULL,
+    material varchar(150) NOT NULL,
+    durabilidade integer NOT NULL
 );
 
 CREATE INDEX ON public.armadura
@@ -327,16 +314,13 @@ ALTER TABLE public.jogavel ADD CONSTRAINT FK_jogavel__id_jogavel FOREIGN KEY (id
 ALTER TABLE public.variedades ADD CONSTRAINT FK_variedades__id_item FOREIGN KEY (id_item) REFERENCES public.item(id_item);
 ALTER TABLE public.moeda ADD CONSTRAINT FK_moeda__id_item FOREIGN KEY (id_item) REFERENCES public.item(id_item);
 ALTER TABLE public.moeda ADD CONSTRAINT FK_moeda__id_moeda FOREIGN KEY (id_moeda) REFERENCES public.tipo_moeda(id_moeda);
-ALTER TABLE public.consumivel ADD CONSTRAINT FK_consumivel__id_item FOREIGN KEY (id_item) REFERENCES public.item(id_item);
-ALTER TABLE public.ofensivo ADD CONSTRAINT FK_ofensivo__id_item FOREIGN KEY (id_item) REFERENCES public.item(id_item);
-ALTER TABLE public.suporte ADD CONSTRAINT FK_suporte__id_item FOREIGN KEY (id_item) REFERENCES public.item(id_item);
-ALTER TABLE public.equipamento ADD CONSTRAINT FK_equipamento__id_item FOREIGN KEY (id_item) REFERENCES public.item(id_item);
+ALTER TABLE public.consumivel_ofensivo ADD CONSTRAINT FK_consumivel_ofensivo__id_item FOREIGN KEY (id_item) REFERENCES public.item(id_item);
+ALTER TABLE public.consumivel_suporte ADD CONSTRAINT FK_consumivel_suporte__id_item FOREIGN KEY (id_item) REFERENCES public.item(id_item);
 ALTER TABLE public.armamento ADD CONSTRAINT FK_armamento__id_item FOREIGN KEY (id_item) REFERENCES public.item(id_item);
 ALTER TABLE public.armadura ADD CONSTRAINT FK_armadura__id_item FOREIGN KEY (id_item) REFERENCES public.item(id_item);
 ALTER TABLE public.habilidade_jogador ADD CONSTRAINT FK_habilidade_jogador__id_habilidade FOREIGN KEY (id_habilidade) REFERENCES public.habilidade(id_habilidade);
 ALTER TABLE public.habilidade_jogador ADD CONSTRAINT FK_habilidade_jogador__id_jogador FOREIGN KEY (id_jogador) REFERENCES public.personagem(id_personagem);
 ALTER TABLE public.equipamento_requer_aptidao ADD CONSTRAINT FK_equipamento_requer_aptidao__id_aptidao FOREIGN KEY (id_aptidao) REFERENCES public.aptidoes(id_aptidao);
-ALTER TABLE public.equipamento_requer_aptidao ADD CONSTRAINT FK_equipamento_requer_aptidao__id_equipamento FOREIGN KEY (id_equipamento) REFERENCES public.equipamento(id_item);
 ALTER TABLE public.equipamento_requer_aptidao ADD CONSTRAINT FK_equipamento_requer_aptidao__id_raca FOREIGN KEY (id_raca) REFERENCES public.raca(id_raca);
 ALTER TABLE public.equipamento_requer_aptidao ADD CONSTRAINT FK_equipamento_requer_aptidao__id_classe FOREIGN KEY (id_classe) REFERENCES public.classe(id_classe);
 ALTER TABLE public.armazena ADD CONSTRAINT FK_armazena__id_item FOREIGN KEY (id_item) REFERENCES public.item(id_item);
