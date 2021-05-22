@@ -81,7 +81,6 @@ CREATE TABLE public.nao_jogavel (
     id_nao_jogavel integer NOT NULL,
     afinidade integer NOT NULL,
     tipo varchar(150) NOT NULL,
-    tipo varchar(150) NOT NULL,
     acrescimo_experiencia integer NOT NULL
 );
 
@@ -135,7 +134,7 @@ CREATE INDEX ON public.moeda
 
 CREATE TABLE public.consumivel (
     id_item integer NOT NULL,
-    duracao integer NOT NULL
+    duracao timestamp without time zone NOT NULL
 );
 
 CREATE INDEX ON public.consumivel
@@ -153,7 +152,11 @@ CREATE INDEX ON public.ofensivo
 
 
 CREATE TABLE public.suporte (
-    id_item integer NOT NULL
+    id_item integer NOT NULL,
+    buff integer,
+    debuff integer,
+    descricao_buf varchar(200),
+    descricao_debuff varchar(200)
 );
 
 CREATE INDEX ON public.suporte
@@ -236,42 +239,6 @@ CREATE TABLE public.inventario (
     capacidade_atual integer NOT NULL,
     capacidade_max integer NOT NULL,
     PRIMARY KEY (id_inventario)
-);
-
-
-CREATE TABLE public.buff (
-    id_buff integer NOT NULL,
-    descricao varchar(500) NOT NULL,
-    PRIMARY KEY (id_buff)
-);
-
-
-CREATE TABLE public.suporte_buff (
-    id_item integer NOT NULL,
-    id_buff integer NOT NULL
-);
-
-CREATE INDEX ON public.suporte_buff
-    (id_item);
-CREATE INDEX ON public.suporte_buff
-    (id_buff);
-
-
-CREATE TABLE public.suporte_debuff (
-    id_item integer NOT NULL,
-    id_debuff integer NOT NULL
-);
-
-CREATE INDEX ON public.suporte_debuff
-    (id_item);
-CREATE INDEX ON public.suporte_debuff
-    (id_debuff);
-
-
-CREATE TABLE public.debuff (
-    id_debuff integer NOT NULL,
-    descriao varchar(500) NOT NULL,
-    PRIMARY KEY (id_debuff)
 );
 
 
@@ -374,10 +341,6 @@ ALTER TABLE public.equipamento_requer_aptidao ADD CONSTRAINT FK_equipamento_requ
 ALTER TABLE public.equipamento_requer_aptidao ADD CONSTRAINT FK_equipamento_requer_aptidao__id_classe FOREIGN KEY (id_classe) REFERENCES public.classe(id_classe);
 ALTER TABLE public.armazena ADD CONSTRAINT FK_armazena__id_item FOREIGN KEY (id_item) REFERENCES public.item(id_item);
 ALTER TABLE public.armazena ADD CONSTRAINT FK_armazena__id_inventario FOREIGN KEY (id_inventario) REFERENCES public.inventario(id_inventario);
-ALTER TABLE public.suporte_buff ADD CONSTRAINT FK_suporte_buff__id_item FOREIGN KEY (id_item) REFERENCES public.item(id_item);
-ALTER TABLE public.suporte_buff ADD CONSTRAINT FK_suporte_buff__id_buff FOREIGN KEY (id_buff) REFERENCES public.buff(id_buff);
-ALTER TABLE public.suporte_debuff ADD CONSTRAINT FK_suporte_debuff__id_item FOREIGN KEY (id_item) REFERENCES public.item(id_item);
-ALTER TABLE public.suporte_debuff ADD CONSTRAINT FK_suporte_debuff__id_debuff FOREIGN KEY (id_debuff) REFERENCES public.debuff(id_debuff);
 ALTER TABLE public.realiza_interacao ADD CONSTRAINT FK_realiza_interacao__id_persongem_efetua FOREIGN KEY (id_persongem_efetua) REFERENCES public.personagem(id_personagem);
 ALTER TABLE public.realiza_interacao ADD CONSTRAINT FK_realiza_interacao__id_persongem_efetuado FOREIGN KEY (id_persongem_efetuado) REFERENCES public.personagem(id_personagem);
 ALTER TABLE public.realiza_interacao ADD CONSTRAINT FK_realiza_interacao__id_interacao FOREIGN KEY (id_interacao) REFERENCES public.interacao(id_interacao);
