@@ -5,6 +5,8 @@
 -- Dumped from database version 13.3 (Ubuntu 13.3-1.pgdg20.04+1)
 -- Dumped by pg_dump version 13.3 (Ubuntu 13.3-1.pgdg20.04+1)
 
+-- Started on 2021-05-27 23:23:52 -03
+
 SET statement_timeout = 0;
 SET lock_timeout = 0;
 SET idle_in_transaction_session_timeout = 0;
@@ -21,6 +23,7 @@ SET default_tablespace = '';
 SET default_table_access_method = heap;
 
 --
+-- TOC entry 200 (class 1259 OID 16674)
 -- Name: aptidoes; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -40,6 +43,7 @@ CREATE TABLE public.aptidoes (
 ALTER TABLE public.aptidoes OWNER TO postgres;
 
 --
+-- TOC entry 212 (class 1259 OID 16748)
 -- Name: armadura; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -54,6 +58,7 @@ CREATE TABLE public.armadura (
 ALTER TABLE public.armadura OWNER TO postgres;
 
 --
+-- TOC entry 211 (class 1259 OID 16744)
 -- Name: armamento; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -69,6 +74,7 @@ CREATE TABLE public.armamento (
 ALTER TABLE public.armamento OWNER TO postgres;
 
 --
+-- TOC entry 215 (class 1259 OID 16764)
 -- Name: armazena; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -82,6 +88,7 @@ CREATE TABLE public.armazena (
 ALTER TABLE public.armazena OWNER TO postgres;
 
 --
+-- TOC entry 205 (class 1259 OID 16706)
 -- Name: atributo; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -99,6 +106,7 @@ CREATE TABLE public.atributo (
 ALTER TABLE public.atributo OWNER TO postgres;
 
 --
+-- TOC entry 202 (class 1259 OID 16687)
 -- Name: classe; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -113,6 +121,7 @@ CREATE TABLE public.classe (
 ALTER TABLE public.classe OWNER TO postgres;
 
 --
+-- TOC entry 220 (class 1259 OID 16790)
 -- Name: combate; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -124,6 +133,7 @@ CREATE TABLE public.combate (
 ALTER TABLE public.combate OWNER TO postgres;
 
 --
+-- TOC entry 222 (class 1259 OID 16798)
 -- Name: comunicacao; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -136,6 +146,7 @@ CREATE TABLE public.comunicacao (
 ALTER TABLE public.comunicacao OWNER TO postgres;
 
 --
+-- TOC entry 225 (class 1259 OID 24587)
 -- Name: consumivel_ofensivo; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -150,6 +161,7 @@ CREATE TABLE public.consumivel_ofensivo (
 ALTER TABLE public.consumivel_ofensivo OWNER TO postgres;
 
 --
+-- TOC entry 226 (class 1259 OID 24591)
 -- Name: consumivel_suporte; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -166,6 +178,7 @@ CREATE TABLE public.consumivel_suporte (
 ALTER TABLE public.consumivel_suporte OWNER TO postgres;
 
 --
+-- TOC entry 214 (class 1259 OID 16757)
 -- Name: equipamento_requer_aptidao; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -181,6 +194,7 @@ CREATE TABLE public.equipamento_requer_aptidao (
 ALTER TABLE public.equipamento_requer_aptidao OWNER TO postgres;
 
 --
+-- TOC entry 223 (class 1259 OID 16802)
 -- Name: ganha_item; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -193,6 +207,7 @@ CREATE TABLE public.ganha_item (
 ALTER TABLE public.ganha_item OWNER TO postgres;
 
 --
+-- TOC entry 203 (class 1259 OID 16692)
 -- Name: habilidade; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -210,6 +225,7 @@ CREATE TABLE public.habilidade (
 ALTER TABLE public.habilidade OWNER TO postgres;
 
 --
+-- TOC entry 213 (class 1259 OID 16752)
 -- Name: habilidade_jogador; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -223,6 +239,7 @@ CREATE TABLE public.habilidade_jogador (
 ALTER TABLE public.habilidade_jogador OWNER TO postgres;
 
 --
+-- TOC entry 219 (class 1259 OID 16785)
 -- Name: interacao; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -236,6 +253,7 @@ CREATE TABLE public.interacao (
 ALTER TABLE public.interacao OWNER TO postgres;
 
 --
+-- TOC entry 216 (class 1259 OID 16769)
 -- Name: inventario; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -249,6 +267,7 @@ CREATE TABLE public.inventario (
 ALTER TABLE public.inventario OWNER TO postgres;
 
 --
+-- TOC entry 208 (class 1259 OID 16722)
 -- Name: item; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -263,6 +282,7 @@ CREATE TABLE public.item (
 ALTER TABLE public.item OWNER TO postgres;
 
 --
+-- TOC entry 207 (class 1259 OID 16715)
 -- Name: jogavel; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -276,6 +296,7 @@ CREATE TABLE public.jogavel (
 ALTER TABLE public.jogavel OWNER TO postgres;
 
 --
+-- TOC entry 210 (class 1259 OID 16731)
 -- Name: moeda; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -288,6 +309,7 @@ CREATE TABLE public.moeda (
 ALTER TABLE public.moeda OWNER TO postgres;
 
 --
+-- TOC entry 206 (class 1259 OID 16711)
 -- Name: nao_jogavel; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -302,6 +324,7 @@ CREATE TABLE public.nao_jogavel (
 ALTER TABLE public.nao_jogavel OWNER TO postgres;
 
 --
+-- TOC entry 204 (class 1259 OID 16697)
 -- Name: personagem; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -320,6 +343,7 @@ CREATE TABLE public.personagem (
 ALTER TABLE public.personagem OWNER TO postgres;
 
 --
+-- TOC entry 201 (class 1259 OID 16679)
 -- Name: raca; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -335,6 +359,7 @@ CREATE TABLE public.raca (
 ALTER TABLE public.raca OWNER TO postgres;
 
 --
+-- TOC entry 218 (class 1259 OID 16779)
 -- Name: realiza_interacao; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -348,6 +373,7 @@ CREATE TABLE public.realiza_interacao (
 ALTER TABLE public.realiza_interacao OWNER TO postgres;
 
 --
+-- TOC entry 224 (class 1259 OID 16807)
 -- Name: recebe_item; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -360,6 +386,7 @@ CREATE TABLE public.recebe_item (
 ALTER TABLE public.recebe_item OWNER TO postgres;
 
 --
+-- TOC entry 217 (class 1259 OID 16774)
 -- Name: tipo_moeda; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -372,6 +399,7 @@ CREATE TABLE public.tipo_moeda (
 ALTER TABLE public.tipo_moeda OWNER TO postgres;
 
 --
+-- TOC entry 221 (class 1259 OID 16794)
 -- Name: troca; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -383,6 +411,7 @@ CREATE TABLE public.troca (
 ALTER TABLE public.troca OWNER TO postgres;
 
 --
+-- TOC entry 209 (class 1259 OID 16727)
 -- Name: variedades; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -395,802 +424,419 @@ CREATE TABLE public.variedades (
 ALTER TABLE public.variedades OWNER TO postgres;
 
 --
+-- TOC entry 3175 (class 0 OID 16674)
+-- Dependencies: 200
 -- Data for Name: aptidoes; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-COPY public.aptidoes (id_aptidao, determinacao, carisma, forca, constituicao, destreza, agilidade, inteligencia, percepcao) FROM stdin;
-1	100	100	400	200	300	500	100	410
-2	300	70	100	220	360	700	130	440
-3	400	130	220	270	380	100	210	100
-4	700	170	530	190	410	130	320	110
-5	250	110	760	150	517	220	330	215
-\.
+INSERT INTO public.aptidoes (id_aptidao, determinacao, carisma, forca, constituicao, destreza, agilidade, inteligencia, percepcao)
+VALUES
+(1,	100, 100, 400, 200, 300, 500, 100, 410),
+(2,	300, 70, 100, 220, 360, 700, 130, 440),
+(3,	400, 130, 220, 270, 380, 100, 210, 100),
+(4,	700, 170, 530, 190,	410, 130, 320, 110),
+(5,	250, 110, 760, 150,	517, 220, 330, 215);
+
 
 
 --
+-- TOC entry 3187 (class 0 OID 16748)
+-- Dependencies: 212
 -- Data for Name: armadura; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-COPY public.armadura (id_item, bonus_defesa, material, durabilidade) FROM stdin;
-1	100	Vibranio	200
-2	50	Ferro	50
-3	90	Couro	15
-4	80	Ferro elfico	700
-5	200	Aço	500
-1	100	Vibranio	200
-2	50	Ferro	50
-3	90	Couro	15
-4	80	Ferro elfico	700
-5	200	Aço	500
-1	100	Vibranio	200
-2	50	Ferro	50
-3	90	Couro	15
-4	80	Ferro elfico	700
-5	200	Aço	500
-1	100	Vibranio	200
-2	50	Ferro	50
-3	90	Couro	15
-4	80	Ferro elfico	700
-5	200	Aço	500
-1	100	Vibranio	200
-2	50	Ferro	50
-3	90	Couro	15
-4	80	Ferro elfico	700
-5	200	Aço	500
-1	100	Vibranio	200
-2	50	Ferro	50
-3	90	Couro	15
-4	80	Ferro elfico	700
-5	200	Aço	500
-1	100	Vibranio	200
-2	50	Ferro	50
-3	90	Couro	15
-4	80	Ferro elfico	700
-5	200	Aço	500
-\.
+INSERT INTO public.armadura (id_item, bonus_defesa, material, durabilidade)
+VALUES
+(1,	100, 'Vibranio', 200),
+(2,	50, 'Ferro', 50),
+(3,	90, 'Couro', 15),
+(4,	80,	'Ferro elfico', 700),
+(5,	200, 'Aço', 500);
+
 
 
 --
+-- TOC entry 3186 (class 0 OID 16744)
+-- Dependencies: 211
 -- Data for Name: armamento; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-COPY public.armamento (id_item, tipo, bonus_armamento, material, durabilidade) FROM stdin;
-1	Espada	100	Ferro	80
-2	Arco e flecha	50	Madeira	120
-3	Cajado	910	Vibranio	900
-4	Machado	200	Cobre	700
-5	Besta	15	Madeira	700
-1	Espada	100	Ferro	80
-2	Arco e flecha	50	Madeira	120
-3	Cajado	910	Vibranio	900
-4	Machado	200	Cobre	700
-5	Besta	15	Madeira	700
-1	Espada	100	Ferro	80
-2	Arco e flecha	50	Madeira	120
-3	Cajado	910	Vibranio	900
-4	Machado	200	Cobre	700
-5	Besta	15	Madeira	700
-1	Espada	100	Ferro	80
-2	Arco e flecha	50	Madeira	120
-3	Cajado	910	Vibranio	900
-4	Machado	200	Cobre	700
-5	Besta	15	Madeira	700
-1	Espada	100	Ferro	80
-2	Arco e flecha	50	Madeira	120
-3	Cajado	910	Vibranio	900
-4	Machado	200	Cobre	700
-5	Besta	15	Madeira	700
-1	Espada	100	Ferro	80
-2	Arco e flecha	50	Madeira	120
-3	Cajado	910	Vibranio	900
-4	Machado	200	Cobre	700
-5	Besta	15	Madeira	700
-1	Espada	100	Ferro	80
-2	Arco e flecha	50	Madeira	120
-3	Cajado	910	Vibranio	900
-4	Machado	200	Cobre	700
-5	Besta	15	Madeira	700
-\.
+INSERT INTO public.armamento (id_item, tipo, bonus_armamento, material, durabilidade)
+VALUES
+(1,	'Espada', 10, 'Ferro' ,80),
+(2,	'Arco e flecha', 50, 'Madeira', 120),
+(3,	'Cajado', 910, 'Vibranio', 900),
+(4,	'Machado', 200,	'Cobre'	700),
+(5,	'Besta', 15, 'Madeira',	700);
 
 
 --
+-- TOC entry 3190 (class 0 OID 16764)
+-- Dependencies: 215
 -- Data for Name: armazena; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-COPY public.armazena (id_item, id_inventario, quantidade) FROM stdin;
-1	1	5
-2	2	6
-3	3	1
-4	4	2
-5	5	1
-1	1	5
-2	2	6
-3	3	1
-4	4	2
-5	5	1
-1	1	5
-2	2	6
-3	3	1
-4	4	2
-5	5	1
-1	1	5
-2	2	6
-3	3	1
-4	4	2
-5	5	1
-1	1	5
-2	2	6
-3	3	1
-4	4	2
-5	5	1
-1	1	5
-2	2	6
-3	3	1
-4	4	2
-5	5	1
-1	1	5
-2	2	6
-3	3	1
-4	4	2
-5	5	1
-\.
+INSERT INTO public.armazena (id_item, id_inventario, quantidade)
+VALUES
+(1,	1, 5),
+(2,	2, 6),
+(3,	3, 1),
+(4,	4, 2),
+(5,	5, 1);
 
 
 --
+-- TOC entry 3180 (class 0 OID 16706)
+-- Dependencies: 205
 -- Data for Name: atributo; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-COPY public.atributo (id_atributo, pontos, defesa, ataque, vida, mana, vigor) FROM stdin;
-1	15	200	7000	5000	14000	100
-2	27	300	9000	56000	3000	150
-3	12	400	4000	29000	76000	120
-4	66	500	2700	7400	54000	370
-5	78	600	10000	2100	100	410
-\.
+INSERT INTO public.atributo (id_atributo, pontos, defesa, ataque, vida, mana, vigor)
+VALUES
+(1,	15,	200, 7000, 5000, 14000,	100),
+(2,	27,	300, 9000, 56000, 3000,	150),
+(3,	12,	400, 4000, 29000, 76000, 120),
+(4,	66,	500, 2700, 7400, 54000,	370),
+(5,	78,	600, 10000, 2100, 100, 410);
 
 
 --
+-- TOC entry 3177 (class 0 OID 16687)
+-- Dependencies: 202
 -- Data for Name: classe; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-COPY public.classe (id_classe, tipo, descricao, bonus_de_classe) FROM stdin;
-1	Lutador	Um mestre do combate marcial, hábil com uma variedade de armas e armaduras	10
-2	Barbaro	Um guerreiro feroz de origem primitiva que pode entrar em uma batalha furiosa	27
-3	Druida	Um sacerdote da Velha Fé, exercendo os poderes da natureza e adotando formas animais	55
-4	Paladino	A holy warrior bound to a sacred oath	32
-5	Mago	Um usuário de magia erudito capaz de manipular as estruturas da realidade.	98
-\.
+INSERT INTO public.classe (id_classe, tipo, descricao, bonus_de_classe)
+VALUES
+(1,	'Lutador', 'Um mestre do combate marcial, hábil com uma variedade de armas e armaduras', 10),
+(2,	'Barbaro', 'Um guerreiro feroz de origem primitiva que pode entrar em uma batalha furiosa',	27),
+(3,	'Druida', 'Um sacerdote da Velha Fé, exercendo os poderes da natureza e adotando formas animais', 55),
+(4,	'Paladino',	'Um guerreiro sagrado com uma força abencoada',	32),
+(5,	'Mago', 'Um usuário de magia erudito capaz de manipular as estruturas da realidade.', 98);
 
 
 --
+-- TOC entry 3195 (class 0 OID 16790)
+-- Dependencies: 220
 -- Data for Name: combate; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-COPY public.combate (id_interacao) FROM stdin;
-1
-2
-3
-4
-5
-1
-2
-3
-4
-5
-1
-2
-3
-4
-5
-1
-2
-3
-4
-5
-1
-2
-3
-4
-5
-1
-2
-3
-4
-5
-1
-2
-3
-4
-5
-\.
+INSERT INTO public.combate (id_interacao)
+VALUES
+(1),
+(2),
+(3),
+(4),
+(5);
 
 
 --
+-- TOC entry 3197 (class 0 OID 16798)
+-- Dependencies: 222
 -- Data for Name: comunicacao; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-COPY public.comunicacao (id_interacao, mensagem) FROM stdin;
-1	Bom dia
-2	Vamos atacar
-3	Me buffa rápido
-4	Vamos farma
-5	Bora x1?
-1	Bom dia
-2	Vamos atacar
-3	Me buffa rápido
-4	Vamos farma
-5	Bora x1?
-1	Bom dia
-2	Vamos atacar
-3	Me buffa rápido
-4	Vamos farma
-5	Bora x1?
-1	Bom dia
-2	Vamos atacar
-3	Me buffa rápido
-4	Vamos farma
-5	Bora x1?
-1	Bom dia
-2	Vamos atacar
-3	Me buffa rápido
-4	Vamos farma
-5	Bora x1?
-1	Bom dia
-2	Vamos atacar
-3	Me buffa rápido
-4	Vamos farma
-5	Bora x1?
-1	Bom dia
-2	Vamos atacar
-3	Me buffa rápido
-4	Vamos farma
-5	Bora x1?
-\.
+INSERT INTO public.comunicacao (id_interacao, mensagem)
+VALUES
+(1,	'Bom dia'),
+(2,	'Vamos atacar'),
+(3,	'Me buffa rápido'),
+(4,	'Vamos farma'),
+(5,	'Bora x1?');
 
 
 --
+-- TOC entry 3200 (class 0 OID 24587)
+-- Dependencies: 225
 -- Data for Name: consumivel_ofensivo; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-COPY public.consumivel_ofensivo (id_item, dano, tipo_dano, duracao) FROM stdin;
-1	0	Não causa dano	10
-2	0	Não causa dano	2
-3	14000	Dano de raio	3
-4	0	Não causa dano	4
-5	30000	Dano de fogo	6
-1	0	Não causa dano	10
-2	0	Não causa dano	2
-3	14000	Dano de raio	3
-4	0	Não causa dano	4
-5	30000	Dano de fogo	6
-1	0	Não causa dano	10
-2	0	Não causa dano	2
-3	14000	Dano de raio	3
-4	0	Não causa dano	4
-5	30000	Dano de fogo	6
-\.
+INSERT INTO public.consumivel_ofensivo (id_item, dano, tipo_dano, duracao)
+VALUES
+(1,	0, 'Não causa dano', 10),
+(2,	0, 'Não causa dano', 2),
+(3,	14000, 'Dano de raio', 3),
+(4,	0, 'Não causa dano', 4),
+(5,	30000, 'Dano de fogo', 6);
 
 
 --
+-- TOC entry 3201 (class 0 OID 24591)
+-- Dependencies: 226
 -- Data for Name: consumivel_suporte; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-COPY public.consumivel_suporte (id_item, buff, debuff, descricao_buf, descricao_debuff, duracao) FROM stdin;
-6	10	0	Aumenta a vida do usuario		10
-7	10	0	Aumenta a força do usuario em 30%		10
-8	0	10		Causa lentidão de 50% ao usuario	5
-9	0	10	Não causa dano	Causa a redução de 50% de chance de errar uma magia no invocador	10
-10	0	10		Causa a inversão de movimento	10
-6	10	0	Aumenta a vida do usuario		10
-7	10	0	Aumenta a força do usuario em 30%		10
-8	0	10		Causa lentidão de 50% ao usuario	5
-9	0	10	Não causa dano	Causa a redução de 50% de chance de errar uma magia no invocador	10
-10	0	10		Causa a inversão de movimento	10
-6	10	0	Aumenta a vida do usuario		10
-7	10	0	Aumenta a força do usuario em 30%		10
-8	0	10		Causa lentidão de 50% ao usuario	5
-9	0	10	Não causa dano	Causa a redução de 50% de chance de errar uma magia no invocador	10
-10	0	10		Causa a inversão de movimento	10
-\.
+INSERT INTO public.consumivel_suporte (id_item, buff, debuff, descricao_buf, descricao_debuff, duracao)
+VALUES
+(6, 10, 0, 'Aumenta a vida do usuario',	10),
+(7, 10, 0, 'Aumenta a força do usuario em 30%',	10),
+(8,	0, 10, 'Causa lentidão de 50% ao usuario', 5),
+(9,	0, 10, 'Não causa dano	Causa a redução de 50% de chance de errar uma magia no invocador', 10),
+(10, 0, 10, 'Causa a inversão de movimento', 10);
 
 
 --
+-- TOC entry 3189 (class 0 OID 16757)
+-- Dependencies: 214
 -- Data for Name: equipamento_requer_aptidao; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-COPY public.equipamento_requer_aptidao (id_aptidao, id_equipamento, id_raca, id_classe, nivel) FROM stdin;
-1	1	1	1	100
-2	2	2	2	50
-3	3	3	3	80
-4	4	4	4	90
-5	5	5	5	120
-1	1	1	1	100
-2	2	2	2	50
-3	3	3	3	80
-4	4	4	4	90
-5	5	5	5	120
-1	1	1	1	100
-2	2	2	2	50
-3	3	3	3	80
-4	4	4	4	90
-5	5	5	5	120
-1	1	1	1	100
-2	2	2	2	50
-3	3	3	3	80
-4	4	4	4	90
-5	5	5	5	120
-1	1	1	1	100
-2	2	2	2	50
-3	3	3	3	80
-4	4	4	4	90
-5	5	5	5	120
-1	1	1	1	100
-2	2	2	2	50
-3	3	3	3	80
-4	4	4	4	90
-5	5	5	5	120
-1	1	1	1	100
-2	2	2	2	50
-3	3	3	3	80
-4	4	4	4	90
-5	5	5	5	120
-\.
+INSERT INTO public.equipamento_requer_aptidao (id_aptidao, id_equipamento, id_raca, id_classe, nivel)
+VALUES
+(1, 1, 1, 1, 100),
+(2,	2, 2, 2, 50),
+(3,	3, 3, 3, 80),
+(4,	4, 4, 4, 90),
+(5,	5, 5, 5, 120);
 
 
 --
+-- TOC entry 3198 (class 0 OID 16802)
+-- Dependencies: 223
 -- Data for Name: ganha_item; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-COPY public.ganha_item (id_interacao, id_item) FROM stdin;
-1	1
-2	2
-3	3
-4	4
-5	5
-1	1
-2	2
-3	3
-4	4
-5	5
-1	1
-2	2
-3	3
-4	4
-5	5
-1	1
-2	2
-3	3
-4	4
-5	5
-1	1
-2	2
-3	3
-4	4
-5	5
-1	1
-2	2
-3	3
-4	4
-5	5
-1	1
-2	2
-3	3
-4	4
-5	5
-\.
+INSERT INTO public.ganha_item (id_interacao, id_item)
+VALUES
+(1, 1),
+(2, 2),
+(3, 3),
+(4, 4),
+(5, 5);
 
 
 --
+-- TOC entry 3178 (class 0 OID 16692)
+-- Dependencies: 203
 -- Data for Name: habilidade; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-COPY public.habilidade (id_habilidade, tipo, tempo_recarga, descricao, duracao, tempo_ativacao, ponto) FROM stdin;
-1	Kage bunshin no jutsu	10	Cria um clone do personagem, que o ajuda durante a luta.	15	3	100
-2	Bola de fogo no jutsu	5	Solta uma bola de fogo em direção ao inimigo.	5	3	200
-3	suiton no jutsu	8	Solta um jato dágua em direção ao inimigo.	10	3	150
-4	kamehameha	12	Solta um poderoso raio de energia em direção ao inimigo.	10	3	200
-5	expelliarmus	25	Solta uma bola de energia em direção ao inimigo que o desarma.	10	3	70
-\.
+INSERT INTO public.habilidade (id_habilidade, tipo, tempo_recarga, descricao, duracao, tempo_ativacao, ponto)
+VALUES
+(1,	'Kage bunshin no jutsu', 10, 'Cria um clone do personagem, que o ajuda durante a luta.', 15, 3,	100),
+(2,	'Bola de fogo no jutsu', 5,	'Solta uma bola de fogo em direção ao inimigo.', 5,	3, 200),
+(3,	'suiton no jutsu', 8, 'Solta um jato dágua em direção ao inimigo.',	10,	3, 150),
+(4,	'kamehameha', 12, 'Solta um poderoso raio de energia em direção ao inimigo.', 10, 3, 200),
+(5,	'expelliarmus',	25, 'Solta uma bola de energia em direção ao inimigo que o desarma.', 10, 3, 70);
 
 
 --
+-- TOC entry 3188 (class 0 OID 16752)
+-- Dependencies: 213
 -- Data for Name: habilidade_jogador; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-COPY public.habilidade_jogador (id_habilidade, id_jogador, nivel) FROM stdin;
-1	1	100
-2	2	50
-3	3	120
-4	4	200
-5	5	110
-1	1	100
-2	2	50
-3	3	120
-4	4	200
-5	5	110
-1	1	100
-2	2	50
-3	3	120
-4	4	200
-5	5	110
-1	1	100
-2	2	50
-3	3	120
-4	4	200
-5	5	110
-1	1	100
-2	2	50
-3	3	120
-4	4	200
-5	5	110
-1	1	100
-2	2	50
-3	3	120
-4	4	200
-5	5	110
-1	1	100
-2	2	50
-3	3	120
-4	4	200
-5	5	110
-\.
+INSERT INTO public.habilidade_jogador (id_habilidade, id_jogador, nivel)
+VALUES
+(1,	1, 100),
+(2,	2, 50),
+(3,	3, 120),
+(4,	4, 200),
+(5,	5, 110);
 
 
 --
+-- TOC entry 3194 (class 0 OID 16785)
+-- Dependencies: 219
 -- Data for Name: interacao; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-COPY public.interacao (id_interacao, local, data) FROM stdin;
-1	Armia	2010-08-29 00:00:00-03
-2	Arzan	2010-04-10 00:00:00-03
-3	Nipplehein	2004-07-04 00:00:00-03
-4	Noatum	2002-04-02 00:00:00-03
-5	Erion	2001-01-10 00:00:00-02
-\.
+INSERT INTO public.interacao (id_interacao, local, data)
+VALUES
+(1, 'Armia', 2010-08-29 00:00:00-03),
+(2, 'Arzan', 2010-04-10 00:00:00-03),
+(3, 'Nipplehein', 2004-07-04 00:00:00-03),
+(4, 'Noatum', 2002-04-02 00:00:00-03),
+(5, 'Erion', 2001-01-10 00:00:00-02);
 
 
 --
+-- TOC entry 3191 (class 0 OID 16769)
+-- Dependencies: 216
 -- Data for Name: inventario; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-COPY public.inventario (id_inventario, capacidade_atual, capacidade_max) FROM stdin;
-1	10	100
-2	70	320
-3	230	750
-4	2	30
-5	670	800
-\.
+INSERT INTO public.inventario (id_inventario, capacidade_atual, capacidade_max)
+VALUES
+(1, 10, 100),
+(2, 70, 320),
+(3, 230, 750),
+(4, 2, 30),
+(5, 670, 800);
 
 
 --
+-- TOC entry 3183 (class 0 OID 16722)
+-- Dependencies: 208
 -- Data for Name: item; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-COPY public.item (id_item, valor, raridade, descricao) FROM stdin;
-1	10	1	Botas de couro, aumentam a velocidade em 10%
-2	50	2	Colar de  safira, protege contra danos causados por fogo.
-3	200	3	Mjolnir o martelo de Thor destruirá seus inimigos causando danos de raio.
-4	310	4	Armadura lendária do dragão celestial, aumenta defesa em 300%, vitalidade em 200%, resistencia a venenos 100%.
-5	720	5	Lamina infernal de Ifrit, esta poderosa lamina \n forjada com o corpo de Ifrid queimara seus inimigo até a morte.
-6	100	1	Poção de vida, ao toma-la sua vida aumenta em 20%.
-7	100	2	Poção que aumenta em 30% a força do usuario.
-8	200	2	Poção de lentidão que causa redução da velocidade em 50% por 10 segundos.
-9	300	3	50% de chance de errar uma magia no invocador.
-10	100	2	Causa a inversão de movimentação.
-\.
+INSERT INTO public.item (id_item, valor, raridade, descricao)
+VALUES
+(1, 10, 1, 'Botas de couro, aumentam a velocidade em 10%'),
+(2,	50, 2, 'Colar de  safira, protege contra danos causados por fogo.'),
+(3,	200, 3, 'Mjolnir o martelo de Thor destruirá seus inimigos causando danos de raio.'),
+(4,	310, 4, 'Armadura lendária do dragão celestial, aumenta defesa em 300%, vitalidade em 200%, resistencia a venenos 100%.'),
+(5,	720, 5, 'Lamina infernal de Ifrit, esta poderosa lamina \n forjada com o corpo de Ifrid queimara seus inimigo até a morte.'),
+(6,	100, 1, 'Poção de vida, ao toma-la sua vida aumenta em 20%.'),
+(7,	100, 2, 'Poção que aumenta em 30% a força do usuario.'),
+(8,	200, 2, 'Poção de lentidão que causa redução da velocidade em 50% por 10 segundos.'),
+(9,	300, 3, '50% de chance de errar uma magia no invocador.'),
+(1, 0, 100, 'Causa a inversão de movimentação.');
 
 
 --
+-- TOC entry 3182 (class 0 OID 16715)
+-- Dependencies: 207
 -- Data for Name: jogavel; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-COPY public.jogavel (id_jogavel, id_inventario, nickname) FROM stdin;
-1	1	venom extreme
-2	2	ziliombrom
-3	3	abigail
-4	4	bobafelps
-5	5	buenoGameplay2469
-\.
+INSERT INTO public.jogavel (id_jogavel, id_inventario, nickname)
+VALUES
+(1, 1, 'venom extreme'),
+(2, 2, 'ziliombrom'),
+(3, 3, 'abigail'),
+(4, 4, 'bobafelps'),
+(5, 5, 'buenoGameplay2469');
 
 
 --
+-- TOC entry 3185 (class 0 OID 16731)
+-- Dependencies: 210
 -- Data for Name: moeda; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-COPY public.moeda (id_item, id_moeda) FROM stdin;
-1	1
-2	2
-3	3
-4	4
-5	5
-1	1
-2	2
-3	3
-4	4
-5	5
-1	1
-2	2
-3	3
-4	4
-5	5
-1	1
-2	2
-3	3
-4	4
-5	5
-1	1
-2	2
-3	3
-4	4
-5	5
-1	1
-2	2
-3	3
-4	4
-5	5
-1	1
-2	2
-3	3
-4	4
-5	5
-\.
+INSERT INTO public.moeda (id_item, id_moeda)
+VALUES
+(1, 1),
+(2, 2),
+(3, 3),
+(4, 4),
+(5, 5);
 
 
 --
+-- TOC entry 3181 (class 0 OID 16711)
+-- Dependencies: 206
 -- Data for Name: nao_jogavel; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-COPY public.nao_jogavel (id_nao_jogavel, afinidade, tipo, acrescimo_experiencia) FROM stdin;
-1	70	Artesão	100
-2	90	Dragão guerreiro	900
-3	3	Npc	20
-4	4	Zumbi	100
-5	5	Ifrid	10000
-1	70	Artesão	100
-2	90	Dragão guerreiro	900
-3	3	Npc	20
-4	4	Zumbi	100
-5	5	Ifrid	10000
-1	70	Artesão	100
-2	90	Dragão guerreiro	900
-3	3	Npc	20
-4	4	Zumbi	100
-5	5	Ifrid	10000
-1	70	Artesão	100
-2	90	Dragão guerreiro	900
-3	3	Npc	20
-4	4	Zumbi	100
-5	5	Ifrid	10000
-1	70	Artesão	100
-2	90	Dragão guerreiro	900
-3	3	Npc	20
-4	4	Zumbi	100
-5	5	Ifrid	10000
-1	70	Artesão	100
-2	90	Dragão guerreiro	900
-3	3	Npc	20
-4	4	Zumbi	100
-5	5	Ifrid	10000
-1	70	Artesão	100
-2	90	Dragão guerreiro	900
-3	3	Npc	20
-4	4	Zumbi	100
-5	5	Ifrid	10000
-\.
+INSERT INTO public.nao_jogavel (id_nao_jogavel, afinidade, tipo, acrescimo_experiencia)
+VALUES
+(1, 70, 'Artesão', 100),
+(2, 90, 'Dragão guerreiro', 900),
+(3, 3, 'Npc', 20),
+(4, 4, 'Zumbi', 100),
+(5,	5, 'Ifrid', 10000);
 
 
 --
+-- TOC entry 3179 (class 0 OID 16697)
+-- Dependencies: 204
 -- Data for Name: personagem; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-COPY public.personagem (id_personagem, id_raca, id_classe, id_atributo, id_aptidao, nome, genero, nivel) FROM stdin;
-1	1	1	1	1	buenoGameplay321	Masculino	100
-2	2	2	2	2	ziliombrom	Feminino	4000
-3	3	3	3	3	bobafelps	Masculino	50
-4	4	4	4	4	dragonSlayer69	Masculino	300
-5	5	5	5	5	gustavo_matador_de_porco	Masculino	150
-\.
+INSERT INTO public.personagem (id_personagem, id_raca, id_classe, id_atributo, id_aptidao, nome, genero, nivel)
+VALUES
+(1, 1, 1, 1, 1, 'buenoGameplay321', 'Masculino', 100),
+(2, 2, 2, 2, 2, 'ziliombrom', 'Feminino', 4000),
+(3, 3, 3, 3, 3, 'bobafelps', 'Masculino', 50),
+(4, 4, 4, 4, 4, 'dragonSlayer69', 'Masculino', 300),
+(5, 5, 5, 5, 5, 'gustavo_matador_de_porco', 'Masculino', 150);
 
 
 --
+-- TOC entry 3176 (class 0 OID 16679)
+-- Dependencies: 201
 -- Data for Name: raca; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-COPY public.raca (id_raca, tipo, descricao, bonus_de_raca, alinhamento) FROM stdin;
-1	Humano	Os humanos são as pessoas mais adaptáveis ​​e ambiciosas entre as raças comuns	20	Neutro e Bom
-2	Elfo	Elfos são um povo mágico de graça sobrenatural, vivendo no mundo, mas não totalmente parte dele.	10	Caótico e Bom
-3	Orc	Orcs vivem uma vida onde não há lugar para fraquezas, e todo guerreiro deve ser forte o suficiente para pegar o que é necessário à força.	90	Ordeiro e Mau
-4	Gnome	A energia e o entusiasmo de um gnomo pela vida brilham em cada centímetro de seu minúsculo corpo.	30	Ordeiro e Mau
-5	Goliath	Strong and reclusive, every day brings a new challenge to a goliath.	200	Neutro e Mau
-\.
+INSERT INTO public.raca (id_raca, tipo, descricao, bonus_de_raca, alinhamento)
+VALUES
+(1,	'Humano', 'Os humanos são as pessoas mais adaptáveis ​​e ambiciosas entre as raças comuns', 20, 'Neutro e Bom'),
+(2, 'Elfo',	'Elfos são um povo mágico de graça sobrenatural, vivendo no mundo, mas não totalmente parte dele.', 10, 'Caótico e Bom'),
+(3, 'Orc',	'Orcs vivem uma vida onde não há lugar para fraquezas, e todo guerreiro deve ser forte o suficiente para pegar o que é necessário à força.', 90, 'Ordeiro e Mau'),
+(4,	'Gnome', 'A energia e o entusiasmo de um gnomo pela vida brilham em cada centímetro de seu minúsculo corpo.', 30, 'Ordeiro e Mau'),
+(5,	'Goliath', 'Strong and reclusive, every day brings a new challenge to a goliath.', 200,	'Neutro e Mau');
 
 
 --
+-- TOC entry 3193 (class 0 OID 16779)
+-- Dependencies: 218
 -- Data for Name: realiza_interacao; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-COPY public.realiza_interacao (id_persongem_efetua, id_persongem_efetuado, id_interacao) FROM stdin;
-1	2	1
-2	3	5
-3	4	2
-4	1	3
-5	2	4
-1	2	1
-2	3	5
-3	4	2
-4	1	3
-5	2	4
-1	2	1
-2	3	5
-3	4	2
-4	1	3
-5	2	4
-1	2	1
-2	3	5
-3	4	2
-4	1	3
-5	2	4
-1	2	1
-2	3	5
-3	4	2
-4	1	3
-5	2	4
-1	2	1
-2	3	5
-3	4	2
-4	1	3
-5	2	4
-1	2	1
-2	3	5
-3	4	2
-4	1	3
-5	2	4
-\.
+INSERT INTO public.realiza_interacao (id_persongem_efetua, id_persongem_efetuado, id_interacao)
+VALUES
+(1, 2, 1),
+(2, 3, 5),
+(3, 4, 2),
+(4, 1, 3),
+(5, 2, 4);
 
 
 --
+-- TOC entry 3199 (class 0 OID 16807)
+-- Dependencies: 224
 -- Data for Name: recebe_item; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-COPY public.recebe_item (id_interacao, id_item) FROM stdin;
-1	2
-2	3
-3	4
-4	5
-5	1
-1	2
-2	3
-3	4
-4	5
-5	1
-1	2
-2	3
-3	4
-4	5
-5	1
-1	2
-2	3
-3	4
-4	5
-5	1
-1	2
-2	3
-3	4
-4	5
-5	1
-1	2
-2	3
-3	4
-4	5
-5	1
-1	2
-2	3
-3	4
-4	5
-5	1
-\.
+INSERT INTO public.recebe_item (id_interacao, id_item)
+VALUES
+(1, 2),
+(2, 3),
+(3, 4),
+(4, 5),
+(5, 1);
 
 
 --
+-- TOC entry 3192 (class 0 OID 16774)
+-- Dependencies: 217
 -- Data for Name: tipo_moeda; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-COPY public.tipo_moeda (id_moeda, minerio) FROM stdin;
-1	Cobre
-2	Bronze
-3	Ouro
-4	Prata
-5	quarto
-\.
+INSERT INTO public.tipo_moeda (id_moeda, minerio)
+VALUES
+(1, 'Cobre'),
+(2, 'Bronze'),
+(3, 'Ouro'),
+(4, 'Prata'),
+(5, 'quarto');
 
 
 --
+-- TOC entry 3196 (class 0 OID 16794)
+-- Dependencies: 221
 -- Data for Name: troca; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-COPY public.troca (id_interacao) FROM stdin;
-1
-2
-3
-4
-5
-1
-2
-3
-4
-5
-1
-2
-3
-4
-5
-1
-2
-3
-4
-5
-1
-2
-3
-4
-5
-1
-2
-3
-4
-5
-1
-2
-3
-4
-5
-\.
+INSERT INTO public.troca (id_interacao)
+VALUES
+(1),
+(2),
+(3),
+(4),
+(5);
 
 
 --
+-- TOC entry 3184 (class 0 OID 16727)
+-- Dependencies: 209
 -- Data for Name: variedades; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-COPY public.variedades (id_item, nome) FROM stdin;
-1	Botas de couro
-2	Colasr de safira
-3	Mjolnir
-4	Armadura lendária do dragão celestial
-5	Lamina infernal de Ifrit
-1	Botas de couro
-2	Colasr de safira
-3	Mjolnir
-4	Armadura lendária do dragão celestial
-5	Lamina infernal de Ifrit
-1	Botas de couro
-2	Colasr de safira
-3	Mjolnir
-4	Armadura lendária do dragão celestial
-5	Lamina infernal de Ifrit
-1	Botas de couro
-2	Colasr de safira
-3	Mjolnir
-4	Armadura lendária do dragão celestial
-5	Lamina infernal de Ifrit
-1	Botas de couro
-2	Colasr de safira
-3	Mjolnir
-4	Armadura lendária do dragão celestial
-5	Lamina infernal de Ifrit
-1	Botas de couro
-2	Colasr de safira
-3	Mjolnir
-4	Armadura lendária do dragão celestial
-5	Lamina infernal de Ifrit
-1	Botas de couro
-2	Colasr de safira
-3	Mjolnir
-4	Armadura lendária do dragão celestial
-5	Lamina infernal de Ifrit
-\.
+INSERT INTO public.variedades (id_item, nome)
+VALUES
+(1,	'Botas de couro'),
+(2,	'Colar de safira'),
+(3,	'Mjolnir'),
+(4,	'Armadura lendária do dragão celestial'),
+(5,	'Lamina infernal de Ifrit');
 
 
 --
+-- TOC entry 2962 (class 2606 OID 16678)
 -- Name: aptidoes aptidoes_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1199,6 +845,7 @@ ALTER TABLE ONLY public.aptidoes
 
 
 --
+-- TOC entry 2976 (class 2606 OID 16710)
 -- Name: atributo atributo_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1207,6 +854,7 @@ ALTER TABLE ONLY public.atributo
 
 
 --
+-- TOC entry 2966 (class 2606 OID 16691)
 -- Name: classe classe_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1215,6 +863,7 @@ ALTER TABLE ONLY public.classe
 
 
 --
+-- TOC entry 2968 (class 2606 OID 16696)
 -- Name: habilidade habilidade_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1223,6 +872,7 @@ ALTER TABLE ONLY public.habilidade
 
 
 --
+-- TOC entry 3005 (class 2606 OID 16789)
 -- Name: interacao interacao_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1231,6 +881,7 @@ ALTER TABLE ONLY public.interacao
 
 
 --
+-- TOC entry 2998 (class 2606 OID 16773)
 -- Name: inventario inventario_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1239,6 +890,7 @@ ALTER TABLE ONLY public.inventario
 
 
 --
+-- TOC entry 2983 (class 2606 OID 16726)
 -- Name: item item_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1247,6 +899,7 @@ ALTER TABLE ONLY public.item
 
 
 --
+-- TOC entry 2981 (class 2606 OID 16719)
 -- Name: jogavel jogavel_nickname_key; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1255,6 +908,7 @@ ALTER TABLE ONLY public.jogavel
 
 
 --
+-- TOC entry 2974 (class 2606 OID 16701)
 -- Name: personagem personagem_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1263,6 +917,7 @@ ALTER TABLE ONLY public.personagem
 
 
 --
+-- TOC entry 2964 (class 2606 OID 16686)
 -- Name: raca raca_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1271,6 +926,7 @@ ALTER TABLE ONLY public.raca
 
 
 --
+-- TOC entry 3000 (class 2606 OID 16778)
 -- Name: tipo_moeda tipo_moeda_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1279,6 +935,7 @@ ALTER TABLE ONLY public.tipo_moeda
 
 
 --
+-- TOC entry 2988 (class 1259 OID 16751)
 -- Name: armadura_id_item_idx; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -1286,6 +943,7 @@ CREATE INDEX armadura_id_item_idx ON public.armadura USING btree (id_item);
 
 
 --
+-- TOC entry 2987 (class 1259 OID 16747)
 -- Name: armamento_id_item_idx; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -1293,6 +951,7 @@ CREATE INDEX armamento_id_item_idx ON public.armamento USING btree (id_item);
 
 
 --
+-- TOC entry 2995 (class 1259 OID 16768)
 -- Name: armazena_id_inventario_idx; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -1300,6 +959,7 @@ CREATE INDEX armazena_id_inventario_idx ON public.armazena USING btree (id_inven
 
 
 --
+-- TOC entry 2996 (class 1259 OID 16767)
 -- Name: armazena_id_item_idx; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -1307,6 +967,7 @@ CREATE INDEX armazena_id_item_idx ON public.armazena USING btree (id_item);
 
 
 --
+-- TOC entry 3006 (class 1259 OID 16793)
 -- Name: combate_id_interacao_idx; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -1314,6 +975,7 @@ CREATE INDEX combate_id_interacao_idx ON public.combate USING btree (id_interaca
 
 
 --
+-- TOC entry 3008 (class 1259 OID 16801)
 -- Name: comunicacao_id_interacao_idx; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -1321,6 +983,7 @@ CREATE INDEX comunicacao_id_interacao_idx ON public.comunicacao USING btree (id_
 
 
 --
+-- TOC entry 3013 (class 1259 OID 24590)
 -- Name: consumivel_ofensivo_id_item_idx; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -1328,6 +991,7 @@ CREATE INDEX consumivel_ofensivo_id_item_idx ON public.consumivel_ofensivo USING
 
 
 --
+-- TOC entry 3014 (class 1259 OID 24594)
 -- Name: consumivel_suporte_id_item_idx; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -1335,6 +999,7 @@ CREATE INDEX consumivel_suporte_id_item_idx ON public.consumivel_suporte USING b
 
 
 --
+-- TOC entry 2991 (class 1259 OID 16760)
 -- Name: equipamento_requer_aptidao_id_aptidao_idx; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -1342,6 +1007,7 @@ CREATE INDEX equipamento_requer_aptidao_id_aptidao_idx ON public.equipamento_req
 
 
 --
+-- TOC entry 2992 (class 1259 OID 16763)
 -- Name: equipamento_requer_aptidao_id_classe_idx; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -1349,6 +1015,7 @@ CREATE INDEX equipamento_requer_aptidao_id_classe_idx ON public.equipamento_requ
 
 
 --
+-- TOC entry 2993 (class 1259 OID 16761)
 -- Name: equipamento_requer_aptidao_id_equipamento_idx; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -1356,6 +1023,7 @@ CREATE INDEX equipamento_requer_aptidao_id_equipamento_idx ON public.equipamento
 
 
 --
+-- TOC entry 2994 (class 1259 OID 16762)
 -- Name: equipamento_requer_aptidao_id_raca_idx; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -1363,6 +1031,7 @@ CREATE INDEX equipamento_requer_aptidao_id_raca_idx ON public.equipamento_requer
 
 
 --
+-- TOC entry 3009 (class 1259 OID 16805)
 -- Name: ganha_item_id_interacao_idx; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -1370,6 +1039,7 @@ CREATE INDEX ganha_item_id_interacao_idx ON public.ganha_item USING btree (id_in
 
 
 --
+-- TOC entry 3010 (class 1259 OID 16806)
 -- Name: ganha_item_id_item_idx; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -1377,6 +1047,7 @@ CREATE INDEX ganha_item_id_item_idx ON public.ganha_item USING btree (id_item);
 
 
 --
+-- TOC entry 2989 (class 1259 OID 16755)
 -- Name: habilidade_jogador_id_habilidade_idx; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -1384,6 +1055,7 @@ CREATE INDEX habilidade_jogador_id_habilidade_idx ON public.habilidade_jogador U
 
 
 --
+-- TOC entry 2990 (class 1259 OID 16756)
 -- Name: habilidade_jogador_id_jogador_idx; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -1391,6 +1063,7 @@ CREATE INDEX habilidade_jogador_id_jogador_idx ON public.habilidade_jogador USIN
 
 
 --
+-- TOC entry 2978 (class 1259 OID 16721)
 -- Name: jogavel_id_inventario_idx; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -1398,6 +1071,7 @@ CREATE INDEX jogavel_id_inventario_idx ON public.jogavel USING btree (id_inventa
 
 
 --
+-- TOC entry 2979 (class 1259 OID 16720)
 -- Name: jogavel_id_jogavel_idx; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -1405,6 +1079,7 @@ CREATE INDEX jogavel_id_jogavel_idx ON public.jogavel USING btree (id_jogavel);
 
 
 --
+-- TOC entry 2985 (class 1259 OID 16734)
 -- Name: moeda_id_item_idx; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -1412,6 +1087,7 @@ CREATE INDEX moeda_id_item_idx ON public.moeda USING btree (id_item);
 
 
 --
+-- TOC entry 2986 (class 1259 OID 16735)
 -- Name: moeda_id_moeda_idx; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -1419,6 +1095,7 @@ CREATE INDEX moeda_id_moeda_idx ON public.moeda USING btree (id_moeda);
 
 
 --
+-- TOC entry 2977 (class 1259 OID 16714)
 -- Name: nao_jogavel_id_nao_jogavel_idx; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -1426,6 +1103,7 @@ CREATE INDEX nao_jogavel_id_nao_jogavel_idx ON public.nao_jogavel USING btree (i
 
 
 --
+-- TOC entry 2969 (class 1259 OID 16705)
 -- Name: personagem_id_aptidao_idx; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -1433,6 +1111,7 @@ CREATE INDEX personagem_id_aptidao_idx ON public.personagem USING btree (id_apti
 
 
 --
+-- TOC entry 2970 (class 1259 OID 16704)
 -- Name: personagem_id_atributo_idx; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -1440,6 +1119,7 @@ CREATE INDEX personagem_id_atributo_idx ON public.personagem USING btree (id_atr
 
 
 --
+-- TOC entry 2971 (class 1259 OID 16703)
 -- Name: personagem_id_classe_idx; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -1447,6 +1127,7 @@ CREATE INDEX personagem_id_classe_idx ON public.personagem USING btree (id_class
 
 
 --
+-- TOC entry 2972 (class 1259 OID 16702)
 -- Name: personagem_id_raca_idx; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -1454,6 +1135,7 @@ CREATE INDEX personagem_id_raca_idx ON public.personagem USING btree (id_raca);
 
 
 --
+-- TOC entry 3001 (class 1259 OID 16784)
 -- Name: realiza_interacao_id_interacao_idx; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -1461,6 +1143,7 @@ CREATE INDEX realiza_interacao_id_interacao_idx ON public.realiza_interacao USIN
 
 
 --
+-- TOC entry 3002 (class 1259 OID 16782)
 -- Name: realiza_interacao_id_persongem_efetua_idx; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -1468,6 +1151,7 @@ CREATE INDEX realiza_interacao_id_persongem_efetua_idx ON public.realiza_interac
 
 
 --
+-- TOC entry 3003 (class 1259 OID 16783)
 -- Name: realiza_interacao_id_persongem_efetuado_idx; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -1475,6 +1159,7 @@ CREATE INDEX realiza_interacao_id_persongem_efetuado_idx ON public.realiza_inter
 
 
 --
+-- TOC entry 3011 (class 1259 OID 16810)
 -- Name: recebe_item_id_interacao_idx; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -1482,6 +1167,7 @@ CREATE INDEX recebe_item_id_interacao_idx ON public.recebe_item USING btree (id_
 
 
 --
+-- TOC entry 3012 (class 1259 OID 16811)
 -- Name: recebe_item_id_item_idx; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -1489,6 +1175,7 @@ CREATE INDEX recebe_item_id_item_idx ON public.recebe_item USING btree (id_item)
 
 
 --
+-- TOC entry 3007 (class 1259 OID 16797)
 -- Name: troca_id_interacao_idx; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -1496,6 +1183,7 @@ CREATE INDEX troca_id_interacao_idx ON public.troca USING btree (id_interacao);
 
 
 --
+-- TOC entry 2984 (class 1259 OID 16730)
 -- Name: variedades_id_item_idx; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -1503,6 +1191,7 @@ CREATE INDEX variedades_id_item_idx ON public.variedades USING btree (id_item);
 
 
 --
+-- TOC entry 3025 (class 2606 OID 16872)
 -- Name: armadura fk_armadura__id_item; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1511,6 +1200,7 @@ ALTER TABLE ONLY public.armadura
 
 
 --
+-- TOC entry 3024 (class 2606 OID 16867)
 -- Name: armamento fk_armamento__id_item; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1519,6 +1209,7 @@ ALTER TABLE ONLY public.armamento
 
 
 --
+-- TOC entry 3032 (class 2606 OID 16907)
 -- Name: armazena fk_armazena__id_inventario; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1527,6 +1218,7 @@ ALTER TABLE ONLY public.armazena
 
 
 --
+-- TOC entry 3031 (class 2606 OID 16902)
 -- Name: armazena fk_armazena__id_item; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1535,6 +1227,7 @@ ALTER TABLE ONLY public.armazena
 
 
 --
+-- TOC entry 3036 (class 2606 OID 16927)
 -- Name: combate fk_combate__id_interacao; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1543,6 +1236,7 @@ ALTER TABLE ONLY public.combate
 
 
 --
+-- TOC entry 3038 (class 2606 OID 16937)
 -- Name: comunicacao fk_comunicacao__id_interacao; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1551,6 +1245,7 @@ ALTER TABLE ONLY public.comunicacao
 
 
 --
+-- TOC entry 3043 (class 2606 OID 24595)
 -- Name: consumivel_ofensivo fk_consumivel_ofensivo__id_item; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1559,6 +1254,7 @@ ALTER TABLE ONLY public.consumivel_ofensivo
 
 
 --
+-- TOC entry 3044 (class 2606 OID 24600)
 -- Name: consumivel_suporte fk_consumivel_suporte__id_item; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1567,6 +1263,7 @@ ALTER TABLE ONLY public.consumivel_suporte
 
 
 --
+-- TOC entry 3028 (class 2606 OID 16887)
 -- Name: equipamento_requer_aptidao fk_equipamento_requer_aptidao__id_aptidao; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1575,6 +1272,7 @@ ALTER TABLE ONLY public.equipamento_requer_aptidao
 
 
 --
+-- TOC entry 3030 (class 2606 OID 16897)
 -- Name: equipamento_requer_aptidao fk_equipamento_requer_aptidao__id_classe; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1583,6 +1281,7 @@ ALTER TABLE ONLY public.equipamento_requer_aptidao
 
 
 --
+-- TOC entry 3029 (class 2606 OID 16892)
 -- Name: equipamento_requer_aptidao fk_equipamento_requer_aptidao__id_raca; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1591,6 +1290,7 @@ ALTER TABLE ONLY public.equipamento_requer_aptidao
 
 
 --
+-- TOC entry 3039 (class 2606 OID 16942)
 -- Name: ganha_item fk_ganha_item__id_interacao; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1599,6 +1299,7 @@ ALTER TABLE ONLY public.ganha_item
 
 
 --
+-- TOC entry 3040 (class 2606 OID 16947)
 -- Name: ganha_item fk_ganha_item__id_item; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1607,6 +1308,7 @@ ALTER TABLE ONLY public.ganha_item
 
 
 --
+-- TOC entry 3026 (class 2606 OID 16877)
 -- Name: habilidade_jogador fk_habilidade_jogador__id_habilidade; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1615,6 +1317,7 @@ ALTER TABLE ONLY public.habilidade_jogador
 
 
 --
+-- TOC entry 3027 (class 2606 OID 16882)
 -- Name: habilidade_jogador fk_habilidade_jogador__id_jogador; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1623,6 +1326,7 @@ ALTER TABLE ONLY public.habilidade_jogador
 
 
 --
+-- TOC entry 3020 (class 2606 OID 16837)
 -- Name: jogavel fk_jogavel__id_jogavel; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1631,6 +1335,7 @@ ALTER TABLE ONLY public.jogavel
 
 
 --
+-- TOC entry 3022 (class 2606 OID 16847)
 -- Name: moeda fk_moeda__id_item; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1639,6 +1344,7 @@ ALTER TABLE ONLY public.moeda
 
 
 --
+-- TOC entry 3023 (class 2606 OID 16852)
 -- Name: moeda fk_moeda__id_moeda; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1647,6 +1353,7 @@ ALTER TABLE ONLY public.moeda
 
 
 --
+-- TOC entry 3019 (class 2606 OID 16832)
 -- Name: nao_jogavel fk_nao_jogavel__id_nao_jogavel; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1655,6 +1362,7 @@ ALTER TABLE ONLY public.nao_jogavel
 
 
 --
+-- TOC entry 3018 (class 2606 OID 16827)
 -- Name: personagem fk_personagem__id_aptidao; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1663,6 +1371,7 @@ ALTER TABLE ONLY public.personagem
 
 
 --
+-- TOC entry 3017 (class 2606 OID 16822)
 -- Name: personagem fk_personagem__id_atributo; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1671,6 +1380,7 @@ ALTER TABLE ONLY public.personagem
 
 
 --
+-- TOC entry 3016 (class 2606 OID 16817)
 -- Name: personagem fk_personagem__id_classe; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1679,6 +1389,7 @@ ALTER TABLE ONLY public.personagem
 
 
 --
+-- TOC entry 3015 (class 2606 OID 16812)
 -- Name: personagem fk_personagem__id_raca; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1687,6 +1398,7 @@ ALTER TABLE ONLY public.personagem
 
 
 --
+-- TOC entry 3035 (class 2606 OID 16922)
 -- Name: realiza_interacao fk_realiza_interacao__id_interacao; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1695,6 +1407,7 @@ ALTER TABLE ONLY public.realiza_interacao
 
 
 --
+-- TOC entry 3033 (class 2606 OID 16912)
 -- Name: realiza_interacao fk_realiza_interacao__id_persongem_efetua; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1703,6 +1416,7 @@ ALTER TABLE ONLY public.realiza_interacao
 
 
 --
+-- TOC entry 3034 (class 2606 OID 16917)
 -- Name: realiza_interacao fk_realiza_interacao__id_persongem_efetuado; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1711,6 +1425,7 @@ ALTER TABLE ONLY public.realiza_interacao
 
 
 --
+-- TOC entry 3041 (class 2606 OID 16952)
 -- Name: recebe_item fk_recebe_item__id_interacao; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1719,6 +1434,7 @@ ALTER TABLE ONLY public.recebe_item
 
 
 --
+-- TOC entry 3042 (class 2606 OID 16957)
 -- Name: recebe_item fk_recebe_item__id_item; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1727,6 +1443,7 @@ ALTER TABLE ONLY public.recebe_item
 
 
 --
+-- TOC entry 3037 (class 2606 OID 16932)
 -- Name: troca fk_troca__id_interacao; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1735,12 +1452,15 @@ ALTER TABLE ONLY public.troca
 
 
 --
+-- TOC entry 3021 (class 2606 OID 16842)
 -- Name: variedades fk_variedades__id_item; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
 ALTER TABLE ONLY public.variedades
     ADD CONSTRAINT fk_variedades__id_item FOREIGN KEY (id_item) REFERENCES public.item(id_item);
 
+
+-- Completed on 2021-05-27 23:23:53 -03
 
 --
 -- PostgreSQL database dump complete
