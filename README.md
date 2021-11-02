@@ -1,4 +1,4 @@
-# MMORPG Character Database
+# MMORPG Character Database - Relational
 
 <img align="right" src="https://github.com/WebisD/mmorpg-character-database/blob/main/images/rpg.jpg" width="30%" />
 
