@@ -14,7 +14,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/antuniooh/mmorpg-character-database">
-    <img src="https://github.com/antuniooh/mmorpg-character-database/blob/main/projeto-fei.png" alt="Logo" width="550">
+    <img src="https://dataedo.com/asset/img/banners/blog/modeling_techniques.png" alt="Logo" width="550">
   </a>
 </p>
 
@@ -44,9 +44,6 @@
 ## 💻 About The Project
 Semester project of the Database subject, taught at Centro Universitário FEI.
 It consists of a relational database for an MMORPG game. It presents the relational model, entity model, as well as all queries necessary for creation and insertion in the database.
-
-![image](https://github.com/antuniooh/mmorpg-character-database/blob/main/projetoFeitasy.png)
-
 
 <!-- HOW TO RUN -->
 ## 🚀 How To Run
